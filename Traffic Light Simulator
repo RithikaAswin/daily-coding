@@ -1,0 +1,11 @@
+int trafficLight(int color) {
+#1-red
+#2-yellow
+#3-green
+    switch (color) {
+        case 1: return 60; 
+        case 2: return 5;   
+        case 3: return 0;   
+        default: return -1; 
+    }
+}
