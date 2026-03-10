@@ -1,0 +1,13 @@
+#include <stdio.h>
+int calculateInterest(int P, int N, int R, int interestType) {
+    switch (interestType) {
+        case 1:
+            return (P * N * R) / 100;
+         case 2:
+        {
+            float amount = 1.0;
+            for (int i = 0; i < N; i++) {
+                amount *= (1.0 + R / 100.0);  
+            }
+            return (P * amount) - P;
+        }
